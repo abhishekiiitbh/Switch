@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.dabba
+{
+	position: absolute;
+	top:25%;
+	left:25%;
+	transform: translate(-25%,-25%);
+	text-align:left;
+}
+
+h2{
+	margin-bottom: 30px;
+	font-family: Monotype Corsiva;
+}
+
+
+.switch{
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 100px;
+	margin: 20px; 
+}
+ 
+.slider{
+
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #955251;
+	transition: 0.5s;
+	border-radius: 50px;
+}
+
+.switch input {display: none}
+
+.slider:before
+{
+	position: absolute;
+	content: "";
+	height: 90px;
+	width: 90px;
+	left: 0px;
+	bottom: 5px;
+	background-color: black;
+	transition: 0.5s;
+	border-radius: 50px;
+
+}
+
+input:checked + .slider
+{
+	background-color: #bada55;
+}
+
+input:checked + .slider:before
+{
+	transform: translateX(100px);
+}
